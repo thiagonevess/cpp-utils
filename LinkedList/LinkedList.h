@@ -29,18 +29,6 @@
 #include <sstream>
 #include <stdexcept>
 
-/*
-LinkedList<string>* list = new LinkedList<string>();
-list->Insert("Thiago");
-list->Insert("Cida");
-list->Insert("Arthur");
-list->Insert("Vitor");
-
-cout << list->ToString();
-
-delete(list);
-*/
-
 using namespace std;
 
 template <class T>
