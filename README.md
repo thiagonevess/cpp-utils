@@ -20,6 +20,8 @@ int main()
   list->Insert("Samantha");
   list->Insert("Tealc");
   cout << list->ToString();
+  list->RemoveAt(0);
+  cout << list->ToString();
   delete(list);
 }
 ```
@@ -29,6 +31,11 @@ int main()
 LIST...
 0077A528 is Jack <HEAD>
 0077A560 is Daniel
+0077A598 is Samantha
+0077A5D0 is Tealc
+
+LIST...
+0077A560 is Daniel <HEAD>
 0077A598 is Samantha
 0077A5D0 is Tealc
 ```
