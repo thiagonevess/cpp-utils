@@ -31,19 +31,6 @@
 
 using namespace std;
 
-const char digit_pairs[201] = {
-  "00010203040506070809"
-  "10111213141516171819"
-  "20212223242526272829"
-  "30313233343536373839"
-  "40414243444546474849"
-  "50515253545556575859"
-  "60616263646566676869"
-  "70717273747576777879"
-  "80818283848586878889"
-  "90919293949596979899"
-};
-
 class Util
 {
 public:
@@ -53,8 +40,6 @@ public:
     static string Hex2Bin(const string& hex);
     static void PadTo(string &str, const size_t num, char paddingChar);
     static string Int2Str(int theInt);
-    static string& itostr(int n, string& s);
-    static string& itostr(unsigned val, string& s);
 };
 
 static string hexString = "0123456789ABCDEF";
