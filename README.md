@@ -1,8 +1,10 @@
-# cpp-utils
 Utilities written in C++
+=============
 
-Example Usage:
+Usage
+-----
 
+```c++
 LinkedList<string>* list = new LinkedList<string>();
 list->Insert("Thiago");
 list->Insert("Cida");
