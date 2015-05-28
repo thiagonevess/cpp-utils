@@ -8,8 +8,17 @@
 LinkedList<string>* list = new LinkedList<string>();
 list->Insert("Jack");
 list->Insert("Daniel");
-list->Insert("Samantha")";
+list->Insert("Samantha");
 list->Insert("Tealc");
 cout << list->ToString();
 delete(list);
+```
+
+*Output*
+```
+LIST...
+0077A528 is Jack <HEAD>
+0077A560 is Daniel
+0077A598 is Samantha
+0077A5D0 is Tealc
 ```
