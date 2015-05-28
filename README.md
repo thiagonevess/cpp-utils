@@ -5,13 +5,23 @@
 *Usage*
 
 ```c++
-LinkedList<string>* list = new LinkedList<string>();
-list->Insert("Jack");
-list->Insert("Daniel");
-list->Insert("Samantha");
-list->Insert("Tealc");
-cout << list->ToString();
-delete(list);
+#include <iostream>
+#include <string>
+
+#include "LinkedList.h"
+
+using namespace std;
+
+int main() 
+{
+  LinkedList<string>* list = new LinkedList<string>();
+  list->Insert("Jack");
+  list->Insert("Daniel");
+  list->Insert("Samantha");
+  list->Insert("Tealc");
+  cout << list->ToString();
+  delete(list);
+}
 ```
 
 *Output*
