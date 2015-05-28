@@ -31,6 +31,10 @@
 
 using namespace std;
 
+/** \brief Element of the Linked List
+ *
+ */
+
 template <class T>
 class Node
 {
@@ -41,12 +45,22 @@ public:
     Node* next;
 };
 
+/** \brief Instantiate a new Node using data as the buffer
+ *
+ * \param  T: data
+ *
+ */
+
 template <class T>
 Node<T>::Node(T data)
 {
     this->buffer = data;
     this->next = NULL;
 }
+
+/** \brief The Linked List class
+ *
+ */
 
 template <class T>
 class LinkedList
@@ -75,6 +89,10 @@ LinkedList<T>::LinkedList()
     this->head = NULL;
 }
 
+/** \brief Instantiate a new Linked List
+ *
+ */
+
 template <class T>
 LinkedList<T>::~LinkedList()
 {
@@ -85,6 +103,11 @@ LinkedList<T>::~LinkedList()
       head = next;
     }
 }
+
+/** \brief Insert a new element on the linked list
+ *
+ * \param T data: new data to be inserted
+ */
 
 template <class T>
 void LinkedList<T>::Insert(T data)
@@ -105,6 +128,13 @@ void LinkedList<T>::Insert(T data)
         head = headAux;
     }
 }
+
+/** \brief Return the node at a given position
+ *
+ * \param index: index of the item to get
+ * \return Node at a given position
+ *
+ */
 
 template <class T>
 Node<T>* LinkedList<T>::ItemAt(int index)
@@ -129,6 +159,10 @@ Node<T>* LinkedList<T>::ItemAt(int index)
     return ret;
 }
 
+/** \brief Removes an item at a given position
+ *
+ * \param index: item to be removed
+ */
 template <class T>
 void LinkedList<T>::RemoveAt(int index)
 {
@@ -152,12 +186,22 @@ void LinkedList<T>::RemoveAt(int index)
     }
 }
 
+/** \brief Get the data of a given position
+ *
+ * \param index: item to search
+ * \return Data of the given position
+ *
+ */
 template <class T>
 T LinkedList<T>::GetBufferAt(int index)
 {
     return ItemAt(index)->buffer;
 }
 
+/** \brief Set the head (first item) of the linked list
+ *
+ * \param newHead: node of the new head
+ */
 template <class T>
 void LinkedList<T>::SetHead(Node<T>* newHead)
 {
@@ -167,12 +211,21 @@ void LinkedList<T>::SetHead(Node<T>* newHead)
     this->head = newHead;
 }
 
+/** \brief Get the next element of the list
+ *
+ * \return Next element of the list
+ */
 template <class T>
 Node<T>* LinkedList<T>::GetNext()
 {
     return this->head->next;
 }
 
+/** \brief Number of items in the list
+ *
+ * \return Number of items in the list
+ *
+ */
 template <class T>
 unsigned long LinkedList<T>::Count()
 {
@@ -189,6 +242,10 @@ unsigned long LinkedList<T>::Count()
     return count;
 }
 
+/** \brief Print the list
+ *
+ * \return string with elements of the list
+ */
 template <class T>
 string LinkedList<T>::ToString()
 {
