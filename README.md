@@ -6,10 +6,10 @@
 
 ```c++
 LinkedList<string>* list = new LinkedList<string>();
-list->Insert("Thiago");
-list->Insert("Cida");
-list->Insert("Arthur");
-list->Insert("Vitor");
+list->Insert("Jack");
+list->Insert("Daniel");
+list->Insert("Samantha")";
+list->Insert("Tealc");
 cout << list->ToString();
 delete(list);
 ```
